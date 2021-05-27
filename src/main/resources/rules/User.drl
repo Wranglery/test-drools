@@ -1,0 +1,14 @@
+package rules
+
+import com.example.testdrools.entity.UserInfo;
+import java.util.List
+
+rule "User"
+    when
+        $user:UserInfo(username=='liu')
+    then
+        System.out.println("名字相同，成功执行");
+end
+
+
+
